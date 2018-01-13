@@ -16,8 +16,6 @@ class App extends Component {
     const { activeItem } = this.state;
     let activeSegment;
 
-    console.log(this.state)
-
     switch(activeItem) {
       case 'Home': activeSegment=(<Home />); break;
       case 'Services': activeSegment = (<Services />); break;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Form, Card, Image } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
 import airImg from '../static/service_air.jpg';
 import carImg from '../static/service_car.jpg';
 import forexImg from '../static/service_forex.jpg';
