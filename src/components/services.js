@@ -46,6 +46,22 @@ class Services extends Component {
             </Card.Content>
             <Image src={forexImg} />
           </Card>
+          <Card>
+            <Card.Content>
+              <Card.Header>
+                Visa Processing
+              </Card.Header>
+            </Card.Content>
+            <Image src={forexImg} />
+          </Card>
+          <Card>
+            <Card.Content>
+              <Card.Header>
+                Tempo Traveller
+              </Card.Header>
+            </Card.Content>
+            <Image src={forexImg} />
+          </Card>
         </Card.Group>
       </div>
     );

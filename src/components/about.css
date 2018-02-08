@@ -1,5 +1,5 @@
 
-.services h1 {
+.about h1 {
 background: #3078C0;
 border: 0;
 padding: 10px;
@@ -12,18 +12,10 @@ letter-spacing: 0em;
 line-height: 1em;
 border-radius: 12px;
 width: 100%;
+margin-bottom: 20px;
 }
 
-.services .cars {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  padding: 40px;
-}
-
-.services {
+.about {
   margin-bottom: 50px;
   align-content: center;
   padding: 40px;

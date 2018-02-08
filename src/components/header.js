@@ -16,6 +16,7 @@ class Header1 extends Component {
             <div>info.trexvis@gmail.com </div>
             <div>trexvis@gmail.com </div>
             <div className="header-left">Call: </div>
+            <div>9600013001 </div>
             <div>9094855306 </div>
             <div>8248881401 </div>
           </div>

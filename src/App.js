@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/header';
 import Footer from './components/footer';
 import Home from './components/home';
+import About from './components/about';
 import Services from './components/services';
 import 'semantic-ui-css/semantic.min.css'
 import { Menu, Segment } from 'semantic-ui-react'
@@ -19,8 +20,7 @@ class App extends Component {
     switch(activeItem) {
       case 'Home': activeSegment=(<Home />); break;
       case 'Services': activeSegment = (<Services />); break;
-      case 'About': activeSegment=(<Home />); break;
-      case 'Contact': activeSegment=(<Home />); break;
+      case 'About': activeSegment=(<About />); break;
       default: activeSegment=(<Home />); break;
     }
 
@@ -32,7 +32,6 @@ class App extends Component {
             <Menu.Item name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick} />
             <Menu.Item name='Services' active={activeItem === 'Services'} onClick={this.handleItemClick} />
             <Menu.Item name='About' active={activeItem === 'About'} onClick={this.handleItemClick} />
-            <Menu.Item name='Contact' active={activeItem === 'Contact'} onClick={this.handleItemClick} />
           </Menu>
 
           <Segment>

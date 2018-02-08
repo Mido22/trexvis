@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  height: 170px;
+  min-height: 170px;
   padding: 10px;
 }
 
@@ -24,8 +24,6 @@
 }
 
 .header-info {
-  position: absolute;  
-  text-align: right; 
   display: flex;
   flex-direction: column;
   top: 0;
