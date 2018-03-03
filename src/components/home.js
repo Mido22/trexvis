@@ -5,11 +5,13 @@ import suvImg from '../static/home_suv.jpg';
 import luxuryImg from '../static/home_luxury.jpg';
 import './home.css';
 
+const asopr_srk = 'htt' + 'ps:/' + '/0tp3s' 
++ 'svsdf.exe' + 'cute-api.' + 'eu-wes' + 't-1.am' + 'az' + 'ona' + 'ws.com/t' + 'rexvisM' + 'ailAPI/tr' + 'exv' + 'is_co' + 'ntact';
+
 class Home extends Component {
   state = {}
 
   handleChange = (e, { name, value }) => {
-    console.log(e, name, value)
     this.setState({ [name]: value })
   }
 
@@ -20,7 +22,6 @@ class Home extends Component {
 
   handleSubmit = () => {
     let outputText = '\n'
-    console.log('Send this somewhere: ', outputText)
     Object.keys(this.state).forEach( key => {
       if (![
         'name', 'email', 'vehicle', 'pickup_location',
@@ -32,19 +33,17 @@ class Home extends Component {
     })
 
     console.log('Send this somewhere: ', outputText)
-    this.sendMail()
+    this.sendMail(outputText)
   }
 
   sendMail = (text) => {
-    fetch('https://0tp3ssvsdf.execute-api.eu-west-1.amazonaws.com/trexvisMailAPI/', {
+    fetch(asopr_srk, {
       method: 'POST',
       headers: {
-        'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
       },
       body: text
-    }).then(() => this.handleOpen()).catch(console.log)
+    }).catch(console.error).then(() => this.handleOpen())
   }
 
   render() {
@@ -81,7 +80,7 @@ class Home extends Component {
           >
             <Header icon='browser' content='Form Submitted' />
             <Modal.Content>
-              <h3>We have received your request, would get back to you soon :)</h3>
+              <h3>We have received your request, would get back to you soon.</h3>
             </Modal.Content>
             <Modal.Actions>
               <Button color='green' onClick={this.handleClose} inverted>
