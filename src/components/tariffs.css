@@ -1,5 +1,5 @@
 
-.about h1 {
+.tariffs h1 {
   background: #3078C0;
   border: 0;
   padding: 10px;
@@ -12,14 +12,9 @@
   line-height: 1em;
   border-radius: 12px;
   width: 100%;
-  margin-bottom: 20px;
 }
 
-.about {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+.tariffs {
   margin-bottom: 50px;
   align-content: center;
   padding: 40px;

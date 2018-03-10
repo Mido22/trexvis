@@ -4,6 +4,8 @@ import airImg from '../static/service_air.jpg';
 import carImg from '../static/service_car.jpg';
 import forexImg from '../static/service_forex.jpg';
 import hotelImg from '../static/service_hotel.jpg';
+import tempoImg from '../static/force-traveller.jpg';
+import visaImg from '../static/Visa_processing.jpg';
 import './services.css';
 
 class Services extends Component {
@@ -52,7 +54,7 @@ class Services extends Component {
                 Visa Processing
               </Card.Header>
             </Card.Content>
-            <Image src={forexImg} />
+            <Image src={visaImg} />
           </Card>
           <Card>
             <Card.Content>
@@ -60,7 +62,7 @@ class Services extends Component {
                 Tempo Traveller
               </Card.Header>
             </Card.Content>
-            <Image src={forexImg} />
+            <Image src={tempoImg} />
           </Card>
         </Card.Group>
       </div>
