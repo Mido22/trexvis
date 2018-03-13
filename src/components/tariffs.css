@@ -1,19 +1,4 @@
 
-.tariffs h1 {
-  background: #3078C0;
-  border: 0;
-  padding: 10px;
-  margin: 0;
-  color: #ffffff;
-  font-size: 28px;
-  font-weight: normal;
-  text-decoration: none;
-  letter-spacing: 0em;
-  line-height: 1em;
-  border-radius: 12px;
-  width: 100%;
-}
-
 .tariffs {
   margin-bottom: 50px;
   align-content: center;

@@ -8,13 +8,17 @@ class About extends Component {
   render() {
     return (
 
-      <Grid verticalAlign='middle' columns={2} centered>
+      <Grid verticalAlign='middle' columns={1} centered>
         <Grid.Row>
           <Grid.Column>
             <div className="about">
               <div className="detailsDiv">
-
                 <h1>About us</h1>
+                
+                <div className="imageDiv">
+                  <Image src={aboutUsImg}/>
+                </div>
+
                 <p>Trexvis offers you with a broad gamut of services which includes Fleet, Foreign Exchange,Visa, Bill Payments, Money Transfer, and Travel, which is about a door to door delivery services.
 
                 </p> <p>For our customer we are here with them with prompt and customized services as per their financial, needs as we would like to continue to grow as a successful travel agency in the industry because we know the value of the customer’s and what our clients needs, prefer and aggrandize. We listen carefully and then suggest the requirement on your travel needs and itineraries that closely match what you are hoping and dreaming.
@@ -23,13 +27,7 @@ class About extends Component {
 
                 </p> <p>Trexvis also offers you car rental services with the best quality of cars at affordable prices. Trexvis cars has a widest variety of cars available at your disposal by offering the best user experience we establish a permanent connect with our customers. </p>
               </div>
-              <div className="imageDiv">
-
-              </div>
             </div>
-          </Grid.Column>
-          <Grid.Column>
-            <Image src={aboutUsImg} />
           </Grid.Column>
         </Grid.Row>
       </Grid>

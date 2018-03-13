@@ -96,9 +96,9 @@ class Home extends Component {
             <Form.Input fluid label='Telephone' value={telephone} name="telephone" placeholder='Telephone' type="tel"  onChange={this.handleChange} />
             <Form.Input fluid label='Email' value={email} name="email" placeholder='Email' type="email"  onChange={this.handleChange} />
             <Form.Input fluid label='Pickup date' value={pickup_date} name="pickup_date" type="date" placeholder='Pickup date'  onChange={this.handleChange} />
-            <Form.Input fluid label='Pickup time' value={pickup_time} name="pickup_time" type="time" placeholder='Pickup time'  onChange={this.handleChange} />
+            <Form.Input fluid label='Pickup time' value={pickup_time} name="pickup_time" placeholder='Pickup time'  onChange={this.handleChange} />
             <Form.Input fluid label='Drop-off date' value={dropoff_date} name="dropoff_date" type="date" placeholder='Drop-off date'  onChange={this.handleChange} />
-            <Form.Input fluid label='Drop-off time' value={dropoff_time} name="dropoff_time" type="time" placeholder='Drop-off time'  onChange={this.handleChange} />
+            <Form.Input fluid label='Drop-off time' value={dropoff_time} name="dropoff_time" placeholder='Drop-off time'  onChange={this.handleChange} />
             <Button type='submit'>Submit</Button>
           </Form>
         </div>
