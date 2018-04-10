@@ -13,7 +13,7 @@ class Services extends Component {
     return (
       <div className="services">
         <h1>Services</h1>
-        <p>Trexvis offers you with a wide range of services which includes Fleet, Foreign Exchange,Visa, Bill Payments, Money Transfer, and Travel, which is about a door to door delivery services.</p>
+        <p>Trexvis India offers you with a wide range of services which includes Fleet, Foreign Exchange,Visa, Bill Payments, Money Transfer, and Travel, which is about a door to door delivery services.</p>
 
         <Card.Group>
           <Card>

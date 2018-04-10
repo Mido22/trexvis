@@ -112,7 +112,7 @@ function formInfo0 () {
     <List as='ul'>
       <List.Item as='li'>We provide 24/7 Car Rental for all your package needs. You can call us any time for the package service across tamilnadu to anywhere we are always there for you. </List.Item>
       <List.Item as='li'>We have all type of vehicles for your comfortable journey. </List.Item>
-      <List.Item as='li'>For Tirupati our package are shown below. Trexvis has been serving the customers since 2015.  </List.Item>
+      <List.Item as='li'>For Tirupati our package are shown below. Trexvis India has been serving the customers since 2015.  </List.Item>
     </List>
   </div>)
 }

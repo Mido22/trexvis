@@ -6,7 +6,7 @@ class Footer1 extends Component {
     return (
       <footer>
         <div className="center copyright">
-          Copyright 2017 - trexvis.in - All Rights Reserved.
+          Copyright 2018 - Trevis India - All Rights Reserved.
         </div>
 
         <div className="inTamil">
