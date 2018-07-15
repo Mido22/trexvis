@@ -15,12 +15,11 @@ class Header1 extends Component {
           </div> 
           <div className="header-info">
             <div className="header-left">Email: </div>
-            <div>info.trexvis@gmail.com </div>
-            <div>trexvis@gmail.com </div>
+            <div>info@trexvisindia.com  </div>
             <div className="header-left">Call: </div>
             <div>9600013001 </div>
-            <div>9094855306 </div>
             <div>8248881401 </div>
+            <div>044-48521938 (Landline)</div>
           </div>
         </div>   
       </header>
