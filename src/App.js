@@ -1,48 +1,29 @@
-import React, { Component } from 'react';
-import Header from './components/header';
-import Footer from './components/footer';
-import Home from './components/home';
-import About from './components/about';
-import Tariffs from './components/tariffs';
-import Services from './components/services';
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import 'semantic-ui-css/semantic.min.css'
-import { Menu, Segment } from 'semantic-ui-react'
 import './App.css';
+import Header from './components/header'
+import Footer from './components/footer'
+import Home from './components/home'
+import About from './components/about'
+import Tariffs from './components/tariffs'
+import Services from './components/services'
 
 class App extends Component {
-  state = { activeItem: 'Home' }
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name})
-
   render() {
-    const { activeItem } = this.state;
-    let activeSegment;
-
-    switch(activeItem) {
-      case 'Home': activeSegment=(<Home />); break;
-      case 'Services': activeSegment = (<Services />); break;
-      case 'About': activeSegment=(<About />); break;
-      case 'Tariff Sheet': activeSegment=(<Tariffs />); break;
-      default: activeSegment=(<Home />); break;
-    }
-
     return (
-      <div className="App">
-        <Header />
-        <div className="body">
-          <Menu pointing>
-            <Menu.Item name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick} />
-            <Menu.Item name='Services' active={activeItem === 'Services'} onClick={this.handleItemClick} />
-            <Menu.Item name='About' active={activeItem === 'About'} onClick={this.handleItemClick} />
-            <Menu.Item name='Tariff Sheet' active={activeItem === 'Tariff Sheet'} onClick={this.handleItemClick} />
-          </Menu>
-
-          <Segment>
-            {activeSegment}
-          </Segment>
+      <Router>
+        <div className="App">
+          <Header />
+          <div className="body">
+            <Route exact path="/" component={Home} />
+            <Route path="/services.html" component={Services} />
+            <Route path="/about.html" component={About} />
+            <Route path="/tariffs.html" component={Tariffs} />
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </Router>
     );
   }
 }

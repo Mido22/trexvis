@@ -3,9 +3,12 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  background: #F7F7F7;
+  background: rgb(170, 154, 154);
 }
 
 .body {
   flex-grow: 1;
+  margin: 0.1em 0;
+  background: #ffffff;
+  border-radius: 10px;
 }

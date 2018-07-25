@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Button, Form, Card, Image, Modal, Header, Icon } from 'semantic-ui-react'
-import sportsImg from '../static/home_sport.jpg';
-import suvImg from '../static/home_suv.jpg';
-import luxuryImg from '../static/home_luxury.jpg';
-import './home.css';
-
-const asopr_srk = 'htt' + 'ps:/' + '/0tp3s' 
-+ 'svsdf.exe' + 'cute-api.' + 'eu-wes' + 't-1.am' + 'az' + 'ona' + 'ws.com/t' + 'rexvisM' + 'ailAPI/tr' + 'exv' + 'is_co' + 'ntact';
+import sportsImg from '../static/home_sport.jpg'
+import suvImg from '../static/home_suv.jpg'
+import luxuryImg from '../static/home_luxury.jpg'
+import './home.css'
+import hctef from './ipa.js'
 
 class Home extends Component {
   state = {}
@@ -21,8 +19,8 @@ class Home extends Component {
 
 
   handleSubmit = () => {
-    let outputText = '\n'
-    Object.keys(this.state).forEach( key => {
+    let outputText = {}
+    Object.keys(this.state).forEach(key => {
       if (![
         'name', 'email', 'vehicle', 'pickup_location',
       'telephone', 'pickup_date', 'pickup_time', 'dropoff_date', 'dropoff_time'
@@ -32,18 +30,11 @@ class Home extends Component {
       outputText += `\n ${key}:  ${this.state[key]}`
     })
 
-    console.log('Send this somewhere: ', outputText)
     this.sendMail(outputText)
   }
 
   sendMail = (text) => {
-    fetch(asopr_srk, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: text
-    }).catch(console.error).then(() => this.handleOpen())
+    hctef(text).catch(console.error).then(() => this.handleOpen())
   }
 
   render() {

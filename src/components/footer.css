@@ -31,3 +31,8 @@ footer .inTamil div {
 footer .margin1 {
   margin-top: 20px;
 }
+footer {
+  margin: 1em 0;
+  background: #ffffff;
+  border-radius: 10px;
+}
