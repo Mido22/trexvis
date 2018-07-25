@@ -19,7 +19,7 @@ class Home extends Component {
 
 
   handleSubmit = () => {
-    let outputText = {}
+    let outputText = ''
     Object.keys(this.state).forEach(key => {
       if (![
         'name', 'email', 'vehicle', 'pickup_location',

@@ -1,10 +1,18 @@
-.App {
+.App-container {
+  max-width: 90vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  background: rgb(170, 154, 154);
 }
+
+.App {
+  display: flex;
+  justify-content: center;
+  background: rgb(231, 9, 9);
+}
+
 
 .body {
   flex-grow: 1;

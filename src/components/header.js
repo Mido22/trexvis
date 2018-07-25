@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Button, Grid, Image, Header, Menu, Dropdown } from 'semantic-ui-react'
+import { Button, Image, Dropdown } from 'semantic-ui-react'
+import EnquiryModal from './enquiryModal.js'
 import logo from '../static/trexvis_Logo_JPEG.jpg'
 import { Link } from 'react-router-dom'
 import './header.css'
@@ -23,15 +24,19 @@ class Header1 extends Component {
           <div className="header-links">
             <Button color={linkButtonColor} as={Link} to='/'>Home</Button>
             <Button color={linkButtonColor} as={Link} to='/about.html'>About Us</Button>
-            <Dropdown item text='Services' button color='red' className='red'>
+            <Dropdown item text='Services' button color={linkButtonColor} className={linkButtonColor}>
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to='/' >Home</Dropdown.Item>
-                <Dropdown.Item as={Link} to='/about.html' >About Us</Dropdown.Item>
+                <Dropdown.Item as={Link} to='/' >Visa</Dropdown.Item>
+                <Dropdown.Item as={Link} to='/' >Immigration</Dropdown.Item>
+                <Dropdown.Item as={Link} to='/' >Car Rentals</Dropdown.Item>
+                <Dropdown.Item as={Link} to='/' >Hotel Reservation</Dropdown.Item>
+                <Dropdown.Item as={Link} to='/' >Tour Package</Dropdown.Item>
+                <Dropdown.Item as={Link} to='/' >Forex</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <Button color={linkButtonColor} as={Link} to='/tariffs.html'>Tariff</Button>
             <Button color={linkButtonColor} as={Link} to='/services.html'>Contact Us</Button>
-            <Button color={linkButtonColor} as={Link} to='/services.html'>Enquiry</Button>
+            <EnquiryModal />
             <Button color={linkButtonColor} as={Link} to='/services.html'>Feedback</Button>
           </div>
         </div>
