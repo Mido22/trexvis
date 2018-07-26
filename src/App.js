@@ -8,6 +8,7 @@ import Home from './components/home'
 import About from './components/about'
 import Tariffs from './components/tariffs'
 import Services from './components/services'
+import Visa from './components/services/visa'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <Header />
             <div className="body">
               <Route exact path="/" component={Home} />
+              <Route path="/visa.html" component={Visa} />
               <Route path="/services.html" component={Services} />
               <Route path="/about.html" component={About} />
               <Route path="/tariffs.html" component={Tariffs} />

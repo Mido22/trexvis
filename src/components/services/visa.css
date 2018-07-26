@@ -1,0 +1,27 @@
+
+.visa-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.visa-container .body-container {
+  min-height: 50vh;
+}
+
+.why-us-container {
+  min-width: 20vw;
+}
+
+.visaCard {
+  max-width: 290px;
+}
+
+.quote-form {
+  min-width: 28vw;
+}
+
+.executive-call-form {
+  min-width: 25vw;
+  max-width: 360px;
+}

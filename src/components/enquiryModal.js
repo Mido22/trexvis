@@ -13,20 +13,13 @@ const serviceOptions = [
 ]
 
 class EnquiryModal extends Component {
-  state = { modalOpen2: true}
+  state = { modalOpen2: true }
+  handleChange = (e, { name, value }) => this.setState({ [name]: value })
+  handleSubmit = () => hctef(this.state).catch(console.error).then(() => this.handleClose())
 
   handleOpen = () => this.setState({ modalOpen: true })
 
   handleClose = () => this.setState({ modalOpen: false, modalOpen2: false })
-
-
-  handleChange = (e, { name, value }) => {
-    this.setState({ [name]: value })
-  }
-
-  handleSubmit = () => {
-    hctef(this.state).catch(console.error).then(() => console.log('submitkllndsf'))
-  }
 
   render = () => {
 
@@ -40,29 +33,13 @@ class EnquiryModal extends Component {
         <Image wrapped size='medium' src={logo} />
         <Modal.Description>
             <Form onSubmit={this.handleSubmit}>
-              <Modal
-                open={this.state.modalOpen}
-                onClose={this.handleClose}
-                basic
-                size='small'
-              >
-                <Header icon='browser' content='Form Submitted' />
-                <Modal.Content>
-                  <h3>We have received your request, would get back to you soon.</h3>
-                </Modal.Content>
-                <Modal.Actions>
-                  <Button color='green' onClick={this.handleClose} inverted>
-                    <Icon name='checkmark' /> Okay
-              </Button>
-                </Modal.Actions>
-              </Modal>
             <Form.Field value={name} required control={Input} name='Name' label='Name:' placeholder='Name' onChange={this.handleChange} />
             <Form.Field value={company} required control={Input} name='Company' label='Company:' placeholder='Company' onChange={this.handleChange} />
             <Form.Field value={email} required control={Input} name='Email' label='Email' placeholder='Email' onChange={this.handleChange} />
             <Form.Field value={phone} required control={Input} name='phone' label='Phone Number' placeholder='Phone Number' onChange={this.handleChange} />
             <Form.Field value={service} control={Select} label='Service' name='Service' placeholder='Service' options={serviceOptions} onChange={this.handleChange} />
             <Form.Field value={comment} control={TextArea} name='Comment' placeholder='Comment' onChange={this.handleChange} />
-            <Button type='submit' positive>Submit</Button>
+              <Button type='submit' positive floated='right'>Submit</Button>
           </Form>
         </Modal.Description>
       </Modal.Content>

@@ -26,7 +26,7 @@ class Header1 extends Component {
             <Button color={linkButtonColor} as={Link} to='/about.html'>About Us</Button>
             <Dropdown item text='Services' button color={linkButtonColor} className={linkButtonColor}>
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to='/' >Visa</Dropdown.Item>
+                <Dropdown.Item as={Link} to='/visa.html' >Visa</Dropdown.Item>
                 <Dropdown.Item as={Link} to='/' >Immigration</Dropdown.Item>
                 <Dropdown.Item as={Link} to='/' >Car Rentals</Dropdown.Item>
                 <Dropdown.Item as={Link} to='/' >Hotel Reservation</Dropdown.Item>

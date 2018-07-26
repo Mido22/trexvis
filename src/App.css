@@ -13,10 +13,17 @@
   background: rgb(231, 9, 9);
 }
 
-
 .body {
   flex-grow: 1;
+}
+
+.body-container {
   margin: 0.1em 0;
+  padding: 10px;
   background: #ffffff;
   border-radius: 10px;
+}
+
+.full-height {
+  height: 100%;
 }

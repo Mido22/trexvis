@@ -17,7 +17,6 @@ class Home extends Component {
 
   handleClose = () => this.setState({ modalOpen: false })
 
-
   handleSubmit = () => {
     let outputText = ''
     Object.keys(this.state).forEach(key => {
@@ -61,7 +60,7 @@ class Home extends Component {
      } = this.state;
 
     return (
-      <div className="home">
+      <div className="home body-container">
         <div className="form">
           <Modal
             open={this.state.modalOpen}
