@@ -10,7 +10,7 @@
 .App {
   display: flex;
   justify-content: center;
-  background: rgb(231, 9, 9);
+  background: #c3c3c4;
 }
 
 .body {

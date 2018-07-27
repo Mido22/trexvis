@@ -6,7 +6,6 @@ import Header from './components/header'
 import Footer from './components/footer'
 import Home from './components/home'
 import About from './components/about'
-import Tariffs from './components/tariffs'
 import Services from './components/services'
 import Visa from './components/services/visa'
 
@@ -22,7 +21,6 @@ class App extends Component {
               <Route path="/visa.html" component={Visa} />
               <Route path="/services.html" component={Services} />
               <Route path="/about.html" component={About} />
-              <Route path="/tariffs.html" component={Tariffs} />
             </div>
             <Footer />
           </div>

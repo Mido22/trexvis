@@ -34,7 +34,6 @@ class Header1 extends Component {
                 <Dropdown.Item as={Link} to='/' >Forex</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <Button color={linkButtonColor} as={Link} to='/tariffs.html'>Tariff</Button>
             <Button color={linkButtonColor} as={Link} to='/services.html'>Contact Us</Button>
             <EnquiryModal />
             <Button color={linkButtonColor} as={Link} to='/services.html'>Feedback</Button>

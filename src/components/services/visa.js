@@ -47,7 +47,7 @@ class WhyChooseUs extends Component {
   }
 }
 
-const clearQuoteForm = {company_or_individual: '', country: null, visa_type: null, email: '', mobile_number: ''}
+const clearQuoteForm = {comment: '', company_or_individual: '', country: null, visa_type: null, email: '', mobile_number: ''}
 class OnlineQuoteForm extends Component {
   state = {}
   handleChange = (e, { name, value }) => this.setState({ [name]: value })
@@ -55,7 +55,7 @@ class OnlineQuoteForm extends Component {
 
   render = () => {
     const {
-      acceptTerms, country, visa_type, company_or_individual, email, mobile_number
+      acceptTerms, country, visa_type, company_or_individual, email, mobile_number, comment
     } = this.state;
     const checkUncheck = () => this.setState({ acceptTerms: !acceptTerms })
     const countryOptions = [
@@ -67,6 +67,7 @@ class OnlineQuoteForm extends Component {
     const visaTypes = [
       { text: 'Tourist Visa', value: 'Tourist Visa' },
       { text: 'Business Visa', value: 'Business Visa' },
+      { text: 'Other', value: 'Other' },
     ]
 
     return (

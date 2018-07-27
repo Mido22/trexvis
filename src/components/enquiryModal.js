@@ -5,10 +5,12 @@ import hctef from './ipa.js'
 import './enquiryModal.css'
 
 const serviceOptions = [
-  { text: 'Visa, Travel, Immigration', value: 'Visa, Travel, Immigration' },
+  { text: 'Visa', value: 'Visa' },
+  { text: 'Travel', value: 'Travel' },
+  { text: 'Immigration', value: 'Immigration' },
   { text: 'Tour Packages', value: 'Tour Packages' },
-  { text: 'Hotel Reservation', value: 'Hotel Reservation' },
-  { text: 'Car Rental', value: 'Car Rental' },
+  { text: 'Hotel Reservations', value: 'Hotel Reservations' },
+  { text: 'Car Rentals', value: 'Car Rentals' },
   { text: 'Forex', value: 'Forex' },
 ]
 
