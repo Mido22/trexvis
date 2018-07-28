@@ -5,18 +5,8 @@
   font-style: normal;
 }
 
-.App-logo {
-  height: 90px;
-}
-
-.App-badge {
-  height: 70px;
-  margin-left: 5px;
-}
-
 .App-title {
   font-family: 'trexvisHeader';
-  font-size: 4em;
 }
 
 .App-header {
@@ -25,16 +15,6 @@
 }
 
 .header-container{
-  min-height: 150px;
-  min-width: 75vw;
-  padding: 15px;
-  border: 15px;
-  margin: 1em 0;
-  border-style: solid;
-  border-color: black;
-  background: #ffffff;
-  border-radius: 30px;
-  max-width: 1080px;
 }
 
 .header-main { 
@@ -60,7 +40,64 @@
   flex-grow: 1;
 }
 
+
+@media (min-width: 640px) { 
 .header-logo img {
   height: 140px;
   margin: 0 20px;
+}
+
+.App-title {
+  font-size: 4em;
+}
+
+.header-container{
+  min-height: 150px;
+  min-width: 75vw;
+  padding: 15px;
+  border: 15px;
+  margin: 1em 0;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: black;
+}
+
+.App-logo {
+  height: 90px;
+}
+
+.App-badge {
+  height: 70px;
+  margin-left: 5px;
+}
+}
+
+@media (max-width: 640px) { 
+.header-logo img {
+  height: 70px;
+  margin: 0 5px;
+}
+
+.App-title {
+  font-size: 2em;
+}
+
+.header-container{
+  min-height: 75px;
+  padding: 5px;
+  border: 5px;
+  margin: 0.3em 0;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+}
+
+.App-logo {
+  height: 45px;
+}
+
+.App-badge {
+  height: 40px;
+  margin-left: 2px;
+}
 }

@@ -11,7 +11,7 @@ import './services.css';
 class Services extends Component {
   render() {
     return (
-      <div className="services">
+      <div className='services'>
         <h1>Services</h1>
         <p>Trexvis India offers you with a wide range of services which includes Fleet, Foreign Exchange,Visa, Bill Payments, Money Transfer, and Travel, which is about a door to door delivery services.</p>
 

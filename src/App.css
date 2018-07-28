@@ -10,7 +10,7 @@
 .App {
   display: flex;
   justify-content: center;
-  background: #c3c3c4;
+  background: #ffffff;
 }
 
 .body {
@@ -25,5 +25,5 @@
 }
 
 .full-height {
-  height: 100%;
+  min-height: 100%;
 }

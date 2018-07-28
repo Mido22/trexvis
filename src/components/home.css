@@ -1,23 +1,5 @@
-.home .form{
-  margin: 10px;
-  flex-grow: 1;
-  border: #3078C0;
-}
-
-.home {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-  align-content: center;
-  padding: 40px;
-}
-
-.home .cars {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+.home-container  .client-header{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
 }

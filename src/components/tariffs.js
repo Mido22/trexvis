@@ -49,7 +49,7 @@ const tirupatiData = [
 class Tariffs extends Component {
   render() {
     return (
-<div className="Tariffs">
+<div className='Tariffs'>
   <h1>Tariffs</h1>
   {formTable('Local Car Tariff', localCarTariffHeaders, localCarTariffData)}
   {formTable('Out Station Tariff', outCarTariffHeaders, outCarTariffData, '(Out Station per day Minimum 250 Kms coverage)')}

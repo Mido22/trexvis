@@ -11,17 +11,17 @@ class Header1 extends Component {
   render() {
 
     return (
-      <header className="App-header">
-        <div className="header-container">
-          <div className="header-main">
-            <div className="header-logo">
+      <header className='App-header'>
+        <div className='header-container'>
+          <div className='header-main'>
+            <div className='header-logo'>
               <Image src={logo}></Image>
             </div>
-            <div className="header-main1">
-              <h1 className="App-title">Trexvis India</h1>
+            <div className='header-main1'>
+              <h1 className='App-title'>Trexvis India</h1>
             </div>
           </div>
-          <div className="header-links">
+          <div className='header-links'>
             <Button color={linkButtonColor} as={Link} to='/'>Home</Button>
             <Button color={linkButtonColor} as={Link} to='/about.html'>About Us</Button>
             <Dropdown item text='Services' button color={linkButtonColor} className={linkButtonColor}>

@@ -8,9 +8,8 @@ footer .copyright {
 }
 
 footer .inTamil {
+  min-width: stretch;
   margin: 5px;
-  margin-left: 50px;
-  margin-right: 50px;
   font-family: italic Georgia, Times, "Times New Roman", serif;
   color: #000000;
   font-weight: normal;
@@ -29,7 +28,7 @@ footer .inTamil div {
 }
 
 footer .margin1 {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 footer {
   margin: 1em 0;

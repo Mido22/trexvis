@@ -7,15 +7,15 @@ import aboutUsImg from '../static/aboutUs.jpg';
 class About extends Component {
   render() {
     return (
-      <div className="body-container">
+      <div className='body-container'>
         <Grid verticalAlign='middle' columns={1} centered >
           <Grid.Row>
             <Grid.Column>
-              <div className="about">
-                <div className="detailsDiv">
+              <div className='about'>
+                <div className='detailsDiv'>
                   <h1>About us</h1>
 
-                  <div className="imageDiv">
+                  <div className='imageDiv'>
                     <Image src={aboutUsImg} />
                   </div>
 
