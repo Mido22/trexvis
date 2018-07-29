@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Container, Divider } from 'semantic-ui-react'
-import './footer.css';
+import './../css/footer.css';
 
 class Footer1 extends Component {
   render() {

@@ -3,7 +3,7 @@ import { Button, Image, Dropdown } from 'semantic-ui-react'
 import EnquiryModal from './enquiryModal.js'
 import logo from '../static/trexvis_Logo_JPEG.jpg'
 import { Link } from 'react-router-dom'
-import './header.css'
+import './../css/header.css'
 
 const linkButtonColor = 'red'
 

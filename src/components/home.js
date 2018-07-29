@@ -4,7 +4,7 @@ import { Grid, Segment, Container, Label, Card } from 'semantic-ui-react'
 import wooriBank from '../static/home/handshake2_large.jpg'
 import cxPresicion from '../static/home/cx_precition.jpg'
 import slideImages from '../data/slideImages'
-import './home.css'
+import './../css/home.css'
 
 class Home extends Component {
   render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Image, Button, Form, Modal, Input, TextArea, Select } from 'semantic-ui-react'
 import logo from '../static/trexvis_Logo_JPEG.jpg'
 import hctef from './ipa.js'
-import './enquiryModal.css'
+import './../css/enquiryModal.css'
 
 const serviceOptions = [
   { text: 'Visa', value: 'Visa' },

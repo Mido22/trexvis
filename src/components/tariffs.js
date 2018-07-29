@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Table, Icon, List, Divider } from 'semantic-ui-react'
-import './tariffs.css';
+import './../css/tariffs.css';
 
 const yes = <Icon color='green' name='checkmark' size='large' />
 const no = <Icon color='red' name='remove' size='large' />

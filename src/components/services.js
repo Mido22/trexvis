@@ -6,7 +6,7 @@ import forexImg from '../static/service_forex.jpg';
 import hotelImg from '../static/service_hotel.jpg';
 import tempoImg from '../static/force-traveller.jpg';
 import visaImg from '../static/Visa_processing.jpg';
-import './services.css';
+import './../css/services.css';
 
 class Services extends Component {
   render() {

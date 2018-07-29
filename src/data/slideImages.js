@@ -14,10 +14,10 @@ export default [
   image5,
   image1,
   image2,
-  image3,
   image6,
   image7,
   image8,
+  image3,
   image9,
   image4,
   image10

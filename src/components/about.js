@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { Grid, Image } from 'semantic-ui-react'
-import './about.css';
+import './../css/about.css';
 import aboutUsImg from '../static/aboutUs.jpg';
 
 class About extends Component {

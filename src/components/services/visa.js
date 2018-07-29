@@ -3,7 +3,7 @@ import { Divider, List, Card, Form, Input, Checkbox, Button, Select, Container, 
 import 'semantic-ui-css/semantic.min.css'
 import hctef from '../ipa'
 import countryList from '../../data/countries'
-import './visa.css';
+import './../../css/services/visa.css';
 
 class VisaService extends Component {
   render() {
