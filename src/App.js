@@ -8,6 +8,7 @@ import Home from './components/home'
 import About from './components/about'
 import Services from './components/services'
 import Visa from './components/services/visa'
+import CarRentals from './components/services/carRentals'
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
               <Route path='/visa.html' component={Visa} />
               <Route path='/services.html' component={Services} />
               <Route path='/about.html' component={About} />
+              <Route path='/car-rentals.html' component={CarRentals} />
             </div>
             <Footer />
           </div>

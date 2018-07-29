@@ -28,7 +28,7 @@ class Header1 extends Component {
               <Dropdown.Menu>
                 <Dropdown.Item as={Link} to='/visa.html' >Visa</Dropdown.Item>
                 <Dropdown.Item as={Link} to='/' >Immigration</Dropdown.Item>
-                <Dropdown.Item as={Link} to='/' >Car Rentals</Dropdown.Item>
+                <Dropdown.Item as={Link} to='/car-rentals.html' >Car Rentals</Dropdown.Item>
                 <Dropdown.Item as={Link} to='/' >Hotel Reservation</Dropdown.Item>
                 <Dropdown.Item as={Link} to='/' >Tour Package</Dropdown.Item>
                 <Dropdown.Item as={Link} to='/' >Forex</Dropdown.Item>
