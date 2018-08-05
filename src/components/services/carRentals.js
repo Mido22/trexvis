@@ -1,6 +1,6 @@
 import React from 'react'
-import { Divider, List, Card, Form, Input, Checkbox, Button, Select, 
-  Container, Grid, Segment, TextArea, Image, Header } from 'semantic-ui-react'
+import { Divider, List, Form, Input, Checkbox, Button, Select, 
+  Segment, TextArea, Image, Header } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 import EnquiryModal from '../enquiryModal.js'
 import SubmitForm from '../submitForm'
@@ -23,7 +23,7 @@ class CarRentals extends SubmitForm {
       { text: 'Other', value: 'Other' },
     ]
 
-    
+
     const formPane = (
     <Segment className='quote-form'>
       <Header textAlign='center'>Get Your Online Quote</Header>

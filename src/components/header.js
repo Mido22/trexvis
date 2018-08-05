@@ -7,7 +7,6 @@ import './../css/header.css'
 
 const linkButtonColor = 'red'
 
-
 class Header1 extends Component {
   render() {
 
@@ -26,7 +25,7 @@ class Header1 extends Component {
           <div className='header-links'>
             <Button className='bounce_button' color={linkButtonColor} as={Link} to='/'>Home</Button>
             <Button className='bounce_button' color={linkButtonColor} as={Link} to='/about.html'>About Us</Button>
-            <Dropdown className='bounce_button' item text='Services' button color={linkButtonColor} className={linkButtonColor}>
+            <Dropdown item text='Services' button color={linkButtonColor} className={linkButtonColor}>
               <Dropdown.Menu>
                 <Dropdown.Item as={Link} to='/visa.html' >Visa</Dropdown.Item>
                 <Dropdown.Item as={Link} to='/' >Immigration</Dropdown.Item>
