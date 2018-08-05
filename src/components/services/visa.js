@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Divider, List, Card, Form, Input, Checkbox, Button, Select, Container, TextArea } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
-import hctef from '../ipa'
+import SubmitForm from '../submitForm'
 import countryList from '../../data/countries'
 import './../../css/services/visa.css';
 
@@ -57,10 +57,8 @@ class WhyChooseUs extends Component {
 
 const countryOptions = countryList.map(country => ({ text: country, value: country }))
 const clearQuoteForm = { comment: '', company_or_individual: '', country: null, visa_type: null, email: '', mobile_number: '' }
-class OnlineQuoteForm extends Component {
-  state = {}
-  handleChange = (e, { name, value }) => this.setState({ [name]: value })
-  handleSubmit = (event) => hctef(this.state).catch(console.error).then(() => this.setState(clearQuoteForm))
+class OnlineQuoteForm extends SubmitForm {
+  handleSubmit2 = () => this.handleSubmit().then(() => this.setState(clearQuoteForm))
 
   render = () => {
     const {
@@ -76,7 +74,7 @@ class OnlineQuoteForm extends Component {
     return (
       <Card.Content className='quote-form'>
         <Card.Header textAlign='center'>Get Your Online Quote</Card.Header>
-        <Form onSubmit={this.handleSubmit}>
+        <Form onSubmit={this.handleSubmit2}>
           <Form.Field required value={country} control={Select} label='Country:' name='Country' placeholder='Country' options={countryOptions} onChange={this.handleChange} />
           <Form.Field required value={visa_type} control={Select} label='Visa Type:' name='visa_type' placeholder='Visa Type' options={visaTypes} onChange={this.handleChange} />
           {
@@ -95,12 +93,10 @@ class OnlineQuoteForm extends Component {
 }
 
 const clearExecutiveForm = { name: '', company: '', email: '', mobile_number: '' }
-class CallExecutiveForm extends Component {
-  state = {}
-  handleChange = (e, { name, value }) => this.setState({ [name]: value })
-  handleSubmit = () => hctef(this.state).catch(console.error).then(() => this.setState(clearExecutiveForm))
+class CallExecutiveForm extends SubmitForm {
+  handleSubmit2 = () => this.handleSubmit().then(() => this.setState(clearExecutiveForm))
 
-  render = () => {
+  render = () => {  
     const {
       name, company, email, mobile_number
     } = this.state;
@@ -108,7 +104,7 @@ class CallExecutiveForm extends Component {
       <Card.Content className='executive-call-form body-container'>
 
         <Card.Header textAlign='center'> Fill up the details, Our Executive will give you a call</Card.Header>
-        <Form onSubmit={this.handleSubmit}>
+        <Form onSubmit={this.handleSubmit2}>
           <Form.Field inline value={name} required control={Input} name='Name' label='Name:' placeholder='Name' onChange={this.handleChange} />
           <Form.Field inline value={company} required control={Input} name='Company' label='Company:' placeholder='Company' onChange={this.handleChange} />
           <Form.Field inline value={email} required control={Input} name='Email' label='Email:' placeholder='Email' onChange={this.handleChange} />

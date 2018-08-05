@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Slideshow from 'react-slidez'
-import { Grid, Segment, Container, Label, Card } from 'semantic-ui-react'
-import wooriBank from '../static/home/handshake2_large.jpg'
-import cxPresicion from '../static/home/cx_precition.jpg'
+import { Grid, Segment, Container, Label, Card, Image } from 'semantic-ui-react'
+import wooriBank from '../static/home/Woori_Bank.jpg'
+import cxPresicion from '../static/home/CX.jpg'
 import slideImages from '../data/slideImages'
 import './../css/home.css'
 
@@ -13,8 +13,18 @@ class Home extends Component {
         <Container className='client-header'>
           <Label size='huge' color='red' centered> Our Clients </Label>
         </Container>
-        <Card raised image={wooriBank} header='Woori Bank' centered/>
-        <Card raised image={cxPresicion} header='CX Precision' centered/>
+        <Card raised centered>
+          <Card.Content>
+            <Card.Header textAlign='center'>Woori Bank</Card.Header>
+            <Image src={wooriBank} />
+          </Card.Content>
+        </Card>
+        <Card raised centered>
+          <Card.Content>
+            <Card.Header textAlign='center'>CX Precision</Card.Header>
+            <Image src={cxPresicion} />
+          </Card.Content>
+        </Card>
       </Segment>
     )
     

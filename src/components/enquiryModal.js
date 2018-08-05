@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Image, Button, Form, Modal, Input, TextArea, Select } from 'semantic-ui-react'
 import logo from '../static/trexvis_Logo_JPEG.jpg'
-import hctef from './ipa.js'
+import SubmitForm from './submitForm'
 import './../css/enquiryModal.css'
 
 const serviceOptions = [
@@ -14,27 +14,24 @@ const serviceOptions = [
   { text: 'Forex', value: 'Forex' },
 ]
 
-class EnquiryModal extends Component {
+class EnquiryModal extends SubmitForm {
   state = { modalOpen2: true }
-  handleChange = (e, { name, value }) => this.setState({ [name]: value })
-  handleSubmit = () => hctef(this.state).catch(console.error).then(() => this.handleClose())
-
+  handleSubmit2 = () => this.handleSubmit().then(() => this.handleClose())
   handleOpen = () => this.setState({ modalOpen: true })
-
   handleClose = () => this.setState({ modalOpen: false, modalOpen2: false })
 
   render = () => {
-
     const {
       name, email, company, phone, service, comment
     } = this.state;
+
     return (
-      <Modal closeIcon trigger={<Button color='red' open={this.state.modalOpen2} onClose={this.handleClose}>Enquiry</Button>}>
+      <Modal closeIcon trigger={<Button className='bounce_button' color='red' open={this.state.modalOpen2} onClose={this.handleClose}>Enquiry</Button>}>
       <Modal.Header>Enquiry Form</Modal.Header>
-      <Modal.Content image>
+      <Modal.Content image scrolling>
         <Image wrapped size='medium' src={logo} />
           <Modal.Description style={{width: '100%'}}>
-            <Form onSubmit={this.handleSubmit}>
+            <Form onSubmit={this.handleSubmit2}>
             <Form.Field value={name} required control={Input} name='Name' label='Name:' placeholder='Name' onChange={this.handleChange} />
             <Form.Field value={company} required control={Input} name='Company' label='Company:' placeholder='Company' onChange={this.handleChange} />
             <Form.Field value={email} required control={Input} name='Email' label='Email' placeholder='Email' onChange={this.handleChange} />

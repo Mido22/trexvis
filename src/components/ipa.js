@@ -9,8 +9,8 @@ function hctef(body) {
   console.log('Send this somewhere: ', body)
   body = JSON.stringify(body)
   console.log('Send this somewhere: ', body)
-  return fetch(asopr_srk, {method, headers, body})
-  //return Promise.resolve('Did not really send anything')
+  //return fetch(asopr_srk, {method, headers, body})
+  return Promise.resolve('Did not really send anything')
 }
 
 export default hctef

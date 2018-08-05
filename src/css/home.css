@@ -3,3 +3,10 @@
   text-align: center;
   margin-bottom: 40px;
 }
+
+@media (max-width: 760px) { 
+.slide-container {
+  height: 60vw;
+  width: 60vw;
+}
+}
