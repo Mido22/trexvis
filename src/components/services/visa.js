@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Divider, List, Card, Form, Input, Checkbox, Button, Select, Container, TextArea } from 'semantic-ui-react'
-import 'semantic-ui-css/semantic.min.css'
 import SubmitForm from '../submitForm'
 import countryList from '../../data/countries'
 import './../../css/services/visa.css';
