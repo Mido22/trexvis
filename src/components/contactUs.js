@@ -29,6 +29,10 @@ class ContactUs extends SubmitForm {
         <h3>Connect with us</h3>
         <div>For support or any questions:</div>
         <div>Email us at info@trexvisindia.com</div>
+        <div></div>
+        <div>Address:</div>
+        <div>35/70 Gajapathy Street,</div>
+        <div>Shenoy Nagar, Chennai- 600 030.</div>
       </div>
     )
 

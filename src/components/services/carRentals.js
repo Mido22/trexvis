@@ -89,14 +89,14 @@ class CarRentals extends SubmitForm {
             <label>Pick up Time: </label>
             <Datetime isValidDate={validDay} value={pickup_time} onChange={(value) => this.setState({ pickup_time: value })} />
           </Form.Group>
-          <Form.Field required value={car_type} control={Select} label='Vehicle Modal:' name='Type of Car' placeholder='Type of Car' options={carOptions} onChange={this.handleChange} />
+          <Form.Field required value={car_type} control={Select} label='Vehicle Model:' name='Type of Car' placeholder='Type of Car' options={carOptions} onChange={this.handleChange} />
           <Form.Field value={name} required control={Input} name='Name' label='Name:' placeholder='Name' onChange={this.handleChange} />
           <Form.Field value={email} required control={Input} name='Email' label='Email:' placeholder='Email' onChange={this.handleChange} />
           <Form.Field value={mobile_number} required control={Input} name='phone' label='Contact No.:' placeholder='Contact No.' onChange={this.handleChange} />
           <Button fluid type='submit' positive>Submit</Button>
           <Divider/>
           <div>
-          <div>* If you have an urgent requirement, please reach us @ 9600013001 / 9840995517.</div>
+          <div>* If you have an urgent requirement, please reach us @ 9600013001 / 9944445393 / 8248881401.</div>
           <div>We are there to assist you to the best of our ability.</div>
           </div>
         </Form>

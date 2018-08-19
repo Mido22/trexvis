@@ -11,6 +11,7 @@ import ContactUs from './components/contactUs'
 import Services from './components/services'
 import Visa from './components/services/visa'
 import CarRentals from './components/services/carRentals'
+import Immigration from './components/services/immigration'
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
               <Route path='/about.html' component={About} />
               <Route path='/car-rentals.html' component={CarRentals} />
               <Route path='/contact-us.html' component={ContactUs} />
+              <Route path='/immigration.html' component={Immigration} />
             </div>
             <Footer />
           </div>
