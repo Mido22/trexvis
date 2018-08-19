@@ -26,6 +26,10 @@
   .car-rentals-container .why-choose-texvis {
     max-width: 30vw;
   }
+
+  .car-rentals-container .quote-form {
+    max-width: 35vw;
+  }
 }
 
 .car-rentals-container .image-slide {

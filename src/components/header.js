@@ -32,7 +32,7 @@ class Header1 extends Component {
                 <Dropdown.Item as={Link} to='/car-rentals.html' >Car Rentals</Dropdown.Item>
                 <Dropdown.Item as={Link} to='/' >Hotel Reservation</Dropdown.Item>
                 <Dropdown.Item as={Link} to='/' >Tour Package</Dropdown.Item>
-                {/* <Dropdown.Item as={Link} to='/' >Forex</Dropdown.Item> */}
+                <Dropdown.Item as={Link} to='/relocation.html' >Relocation</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <Button className='bounce_button' color={linkButtonColor} as={Link} to='/contact-us.html'>Contact Us</Button>

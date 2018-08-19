@@ -5,3 +5,9 @@
 .immigration-card-header {
   text-align: center;
 }
+
+@media (max-width: 766px) { 
+  .immigration-card {
+    min-width: 80vw;
+  }
+}

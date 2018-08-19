@@ -41,7 +41,7 @@ const visaOptions = [
     description: 'Expats Should De-register with FRRO as they depart from India for official immigration record purposes'
   },
 ].map(card =>
-  <Card raised link='#' >
+  <Card raised link='#' className='immigration-card'>
     <Card.Content>
       <Card.Header className='immigration-card-header'> {card.header} </Card.Header>
       <Card.Description text-align='center'> {card.description} </Card.Description>

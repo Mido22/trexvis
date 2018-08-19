@@ -96,7 +96,8 @@ class CarRentals extends SubmitForm {
           <Button fluid type='submit' positive>Submit</Button>
           <Divider/>
           <div>
-          <div>* If you have an urgent requirement, please reach us @ 9600013001 / 9944445393 / 8248881401.</div>
+          <div>* If you have an urgent requirement: </div>
+          <div>Please reach us @ 9600013001 / 9944445393 / 8248881401.</div>
           <div>We are there to assist you to the best of our ability.</div>
           </div>
         </Form>

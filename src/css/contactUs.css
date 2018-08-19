@@ -7,6 +7,12 @@
   justify-content: space-around;
 }
 
+.GIframe {
+  width: 600;
+  height: 450;
+  max-width: 90vw;
+}
+
 
 @media (min-width: 640px) { 
   .contact-form {
