@@ -13,6 +13,7 @@ import Visa from './components/services/visa'
 import CarRentals from './components/services/carRentals'
 import Immigration from './components/services/immigration'
 import Relocation from './components/services/relocation'
+import TourPackages from './components/services/tourPackages'
 
 class App extends Component {
   render() {
@@ -30,6 +31,7 @@ class App extends Component {
               <Route path='/contact-us.html' component={ContactUs} />
               <Route path='/immigration.html' component={Immigration} />
               <Route path='/relocation.html' component={Relocation} />
+              <Route path='/tour-packages.html' component={TourPackages} />
             </div>
             <Footer />
           </div>
