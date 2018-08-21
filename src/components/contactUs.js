@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  Divider, Container, Form, Input, Button, TextArea, Card
+  Form, Input, Button, TextArea, Card
 } from 'semantic-ui-react'
 import './../css/contactUs.css'
 import SubmitForm from './submitForm'
@@ -36,7 +36,7 @@ class ContactUs extends SubmitForm {
             </Card.Description>
           </Card.Content>
         </Card>
-        <iframe className='GIframe' src={gMapLink} frameborder='0' height='450' width='600' allowfullscreen></iframe>
+        <iframe title='Our Office Address' className='GIframe' src={gMapLink} frameborder='0' height='450' width='600' allowfullscreen></iframe>
       </Card.Group>
     )
 

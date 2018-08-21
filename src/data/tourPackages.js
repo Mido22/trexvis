@@ -52,6 +52,6 @@ export const religiousDestionations = [
 ].map(toOptions)
 
 const p = []
-for(let i=1;i<101;i++) p.push[i]
+for(let i=1;i<101;i++) p.push(i)
 
 export const passengers = p.map(toOptions)

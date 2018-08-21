@@ -1,5 +1,5 @@
 import React from 'react'
-import { Divider, List, Card, Form, Input, Segment, Button, Select, Container, Icon, Header } from 'semantic-ui-react'
+import { Form, Input, Segment, Button, Select, Container, Icon, Header } from 'semantic-ui-react'
 import SubmitForm from '../submitForm'
 import {
   countires,

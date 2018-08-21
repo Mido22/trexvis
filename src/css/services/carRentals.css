@@ -20,19 +20,19 @@
 
 @media (min-width: 766px) { 
   .car-rentals-container .image-slider {
-    max-width: 18vw;
+    max-width: 16vw;
   }
 
   .car-rentals-container .why-choose-texvis {
-    max-width: 30vw;
+    max-width: 28vw;
   }
 
   .car-rentals-container .quote-form {
-    max-width: 35vw;
+    max-width: 31vw;
   }
 }
 
-.car-rentals-container .image-slide {
+.car-rentals-container .image-slide { 
   margin-top: 30px;
 }
 

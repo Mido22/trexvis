@@ -26,8 +26,8 @@ class EnquiryModal extends SubmitForm {
     } = this.state;
 
     return (
-      <Modal closeIcon trigger={<Button className='bounce_button' color='red' open={this.state.modalOpen2} onClose={this.handleClose}>Enquiry</Button>}>
-      <Modal.Header>Enquiry Form</Modal.Header>
+      <Modal closeIcon trigger={<Button className='bounce_button' color='red' open={this.state.modalOpen2} onClose={this.handleClose}>Feedback</Button>}>
+      <Modal.Header>Feedback Form</Modal.Header>
       <Modal.Content image scrolling>
         <Image wrapped size='medium' src={logo} />
           <Modal.Description style={{width: '100%'}}>
