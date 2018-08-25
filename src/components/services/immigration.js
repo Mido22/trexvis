@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {
   Card, Segment, Container
 } from 'semantic-ui-react'
+
 import './../../css/services/immigration.css'
 
 const immigDescriptions = [
@@ -41,12 +42,13 @@ const visaOptions = [
     description: 'Expats Should De-register with FRRO as they depart from India for official immigration record purposes'
   },
 ].map(card =>
-  <Card raised link='#' className='immigration-card'>
+  <Card raised link='#' className='immigration-card' centered>
     <Card.Content>
       <Card.Header className='immigration-card-header'> {card.header} </Card.Header>
       <Card.Description text-align='center'> {card.description} </Card.Description>
     </Card.Content>
-  </Card>)
+  </Card>
+)
 
 export default class Immigration extends Component {
   render() {
@@ -54,7 +56,9 @@ export default class Immigration extends Component {
       <Segment raised className='immigration-container'>
       <Container>
           <div className='immigration-description-container'>{immigDescriptions}</div>
-          <Card.Group centered className='immigration-cards' text-align='center' doubling itemsPerRow='3'>{visaOptions}</Card.Group>
+          <Card.Group className='immigration-cards' text-align='center' doubling itemsPerRow='3' centered>
+            {visaOptions}
+          </Card.Group>
       </Container>
       </Segment>
     );

@@ -20,6 +20,7 @@ const airportTypes = [
   'Chennai International Airport',
   'Chennai Domestic Airport',
 ].map(toOptions)
+
 const packageList = [
   '4 Hr / 40 KM',
   '5 HR / 50 KM',
@@ -42,7 +43,7 @@ class CarRentals extends SubmitForm {
 
     switch (transport_type) {
       case 'Airport Transfer':
-        const pickLabel = to_from_airport !== 'to_airport' ? 'Pickup Point:' : 'Dropoff point:';
+        const pickLabel = to_from_airport === 'to_airport' ? 'Pickup Point' : 'Dropoff point';
         conditionalPart = (
           <div>
             <Form.Group inline>
@@ -50,12 +51,8 @@ class CarRentals extends SubmitForm {
               <Form.Radio name='to_from_airport' label='Dropoff To Airport' value='to_airport' checked={to_from_airport === 'to_airport'} onChange={this.handleChange} />
               <Form.Radio name='to_from_airport' label='Pickup From Airport' value='from_airport' checked={to_from_airport === 'from_airport'} onChange={this.handleChange} />
             </Form.Group>
-            <Form.Field value={city} control={Select} label={pickLabel} name='city' placeholder={pickLabel} options={chennaiLocalAreaOptions} onChange={this.handleChange} />
             <Form.Field value={airport_type} control={Select} label='Airport: ' name='Airport' placeholder='Airport' options={airportTypes} onChange={this.handleChange} />
-            <Form.Group inline>
-              <Form.Radio name='to_from_airport' label='Dropoff To Airport' value='to_airport' checked={to_from_airport === 'to_airport'} onChange={this.handleChange} />
-              <Form.Radio name='to_from_airport' label='Pickup From Airport' value='from_airport' checked={to_from_airport === 'from_airport'} onChange={this.handleChange} />
-            </Form.Group>
+            <Form.Field value={city} control={Select} label={pickLabel} name='city' placeholder={pickLabel} options={chennaiLocalAreaOptions} onChange={this.handleChange} />
           </div>
         ); break;
       case 'Local Trip':
@@ -85,7 +82,7 @@ class CarRentals extends SubmitForm {
         </Header>
         <Form onSubmit={this.handleSubmit}>
           {conditionalPart}
-          <Form.Group inline>
+          <Form.Group inline className='rentals-margin-up'>
             <label>Pick up Time: </label>
             <Datetime isValidDate={validDay} value={pickup_time} onChange={(value) => this.setState({ pickup_time: value })} />
           </Form.Group>
@@ -131,7 +128,7 @@ const chooseList = [
 
 const whyChooseTrexvis = (
   <Segment raised className='why-choose-texvis'>
-    <Header as='h3' className="header">Why Choose Trexvis Car Rentals</Header>
+    <Header as='h3' className='header'>Why Choose Trexvis Car Rentals</Header>
     <Image src={hour24} centered rounded height='200px' width='440px' className='two-hour' />
     <Divider />
     <p>

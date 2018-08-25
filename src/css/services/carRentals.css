@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.rentals-margin-up {
+  margin-top: 10px !important;
+}
+
 
 @media (max-width: 766px) { 
   .car-rentals-container .image-slider {
