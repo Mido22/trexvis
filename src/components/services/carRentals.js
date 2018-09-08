@@ -104,7 +104,7 @@ class CarRentals extends SubmitForm {
     )
     return (
       <div className='car-rentals-container'>
-        {imagesPane}
+        {/* {imagesPane} */}
         {whyChooseTrexvis}
         {formPane}
       </div>

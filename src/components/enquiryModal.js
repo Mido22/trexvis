@@ -5,14 +5,20 @@ import SubmitForm from './submitForm'
 import './../css/enquiryModal.css'
 
 const serviceOptions = [
-  { text: 'Visa', value: 'Visa' },
-  { text: 'Travel', value: 'Travel' },
-  { text: 'Immigration', value: 'Immigration' },
-  { text: 'Tour Packages', value: 'Tour Packages' },
-  { text: 'Hotel Reservations', value: 'Hotel Reservations' },
-  { text: 'Car Rentals', value: 'Car Rentals' },
-  { text: 'Forex', value: 'Forex' },
-]
+  'Short Term Rental',
+  'Immigration',
+  'Relocation',
+  'Air Ticketing',
+  'Tour Packages',
+  'Visa Services',
+  'Hotel Reservation',
+].map(text => ({ text, value: text }))
+
+const otherOptions = [
+  'Suggest',
+  'Complain',
+  'Appreciate',
+].map(text => ({ text, value: text }))
 
 class EnquiryModal extends SubmitForm {
   state = { modalOpen2: true }
@@ -22,7 +28,7 @@ class EnquiryModal extends SubmitForm {
 
   render = () => {
     const {
-      name, email, company, phone, service, comment
+      name, email, company, phone, service, comment, reason
     } = this.state;
 
     return (
@@ -33,10 +39,11 @@ class EnquiryModal extends SubmitForm {
           <Modal.Description style={{width: '100%'}}>
             <Form onSubmit={this.handleSubmit2}>
             <Form.Field value={name} required control={Input} name='Name' label='Name:' placeholder='Name' onChange={this.handleChange} />
-            <Form.Field value={company} required control={Input} name='Company' label='Company:' placeholder='Company' onChange={this.handleChange} />
+            <Form.Field value={company} required control={Input} name='Company' label='Company Name:' placeholder='Company' onChange={this.handleChange} />
+            <Form.Field value={service} control={Select} label='Line of Business:' name='Service' placeholder='Service' options={serviceOptions} onChange={this.handleChange} />
             <Form.Field value={email} required control={Input} name='Email' label='Email' placeholder='Email' onChange={this.handleChange} />
             <Form.Field value={phone} required control={Input} name='phone' label='Phone Number' placeholder='Phone Number' onChange={this.handleChange} />
-            <Form.Field value={service} control={Select} label='Service' name='Service' placeholder='Service' options={serviceOptions} onChange={this.handleChange} />
+            <Form.Field value={reason} control={Select} label='Would you like to:' name='Reason' placeholder='Reason for Feedback' options={otherOptions} onChange={this.handleChange} />
             <Form.Field value={comment} control={TextArea} name='Comment' placeholder='Comment' onChange={this.handleChange} />
             <Button type='submit' positive floated='right'>Submit</Button>
           </Form>
