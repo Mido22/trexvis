@@ -7,8 +7,6 @@ import Datetime from 'react-datetime'
 import EnquiryModal from '../enquiryModal.js'
 import SubmitForm from '../submitForm'
 import './../../css/services/carRentals.css';
-import imageSlide1 from '../../static/serivces/carRentals/Rolls-Royce_Ghost.jpg'
-import imageSlide2 from '../../static/serivces/carRentals/opening-door-to-car.jpg'
 import hour24 from '../../static/serivces/carRentals/24x7-Technical-Support.jpg'
 import cars from '../../data/cars'
 import chennaiLocalAreas from '../../data/chennaiLocalAreas'
@@ -112,12 +110,6 @@ class CarRentals extends SubmitForm {
   }
 }
 
-const imagesPane = (
-  <Segment raised className='image-slider'>
-    <Image src={imageSlide1} bordered rounded className='image-slide' />
-    <Image src={imageSlide2} bordered rounded className='image-slide' />
-  </Segment>
-)
 const chooseList = [
   'Dedicated Driver',
   'Crystalline Invoices',

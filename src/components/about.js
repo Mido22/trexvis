@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Grid, Image, Segment } from 'semantic-ui-react'
 import './../css/about.css'
-import aboutUsImg from '../static/aboutUs.jpg'
+import aboutUsImg from '../static/serivces/aboutUs.jpg'
 import { setBackground } from '../utils'
 
 class About extends Component {

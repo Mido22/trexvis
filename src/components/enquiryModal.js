@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image, Button, Form, Modal, Input, TextArea, Select } from 'semantic-ui-react'
-import logo from '../static/trexvis_Logo_JPEG.jpg'
+import logo from '../static/trexvis_Logo.png'
 import SubmitForm from './submitForm'
 import './../css/enquiryModal.css'
 

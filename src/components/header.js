@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Image, Dropdown } from 'semantic-ui-react'
 import EnquiryModal from './enquiryModal.js'
-import logo from '../static/trexvis_Logo_JPEG_v1.png'
+import logo from '../static/trexvis_Logo.png'
 import { Link } from 'react-router-dom'
 import './../css/header.css'
 const linkButtonColor = 'red'

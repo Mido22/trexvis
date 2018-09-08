@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  Form, Input, Button, TextArea, Card
+  Form, Input, Button, TextArea, Card, Segment
 } from 'semantic-ui-react'
 import './../css/contactUs.css'
 import SubmitForm from './submitForm'
@@ -11,11 +11,13 @@ const gMapLink ='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.3280
 class ContactUs extends SubmitForm {
   render() {
     setBackground()
+
     const {
       name, email, mobile_number, contact_message
     } = this.state
+
     const contactForm = (
-      <div className='contact-form'>
+      <Segment className='contact-form'>
         <Form onSubmit={this.handleSubmit}>
           <h1>Get in Touch</h1>
           <h3>Please fill out the quick form and we will be in touch with lightning speed.</h3>
@@ -25,7 +27,7 @@ class ContactUs extends SubmitForm {
           <Form.Field value={contact_message} required control={TextArea} name='contact message' label='Message:' placeholder='Message' onChange={this.handleChange} />
           <Button fluid type='submit' positive>Submit</Button>
         </Form>
-      </div>
+      </Segment>
     )
     const contactDetails = (
       <Card.Group itemsPerRow={1} className='contact-details'>
