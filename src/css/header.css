@@ -28,6 +28,11 @@
   font: italic 1em "Fira Sans", serif;
   position: relative;
   color: white;
+  text-transform: capitalize;
+  text-shadow: -1px -1px 1px rgb(112, 110, 110),
+               0px 2px 1px rgba(0,0,0,0.5),
+               2px 2px 2px rgba(0,0,0,0.7),
+               0px 0px 3px rgba(0,0,0,0.4); 
 }
 
 .header-links {
