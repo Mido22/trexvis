@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
 import { Grid, Image } from 'semantic-ui-react'
-import './../css/about.css';
-import aboutUsImg from '../static/aboutUs.jpg';
+import './../css/about.css'
+import aboutUsImg from '../static/aboutUs.jpg'
+import { setBackground } from '../utils'
 
 class About extends Component {
   render() {
+    setBackground()
     return (
       <div className='body-container'>
         <Grid verticalAlign='middle' columns={1} centered >

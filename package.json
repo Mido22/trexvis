@@ -10,7 +10,6 @@
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.0.17",
-    "react-slidez": "^0.0.28",
     "semantic-ui-css": "^2.2.12",
     "semantic-ui-react": "^0.77.2",
     "yarn": "^1.5.1"

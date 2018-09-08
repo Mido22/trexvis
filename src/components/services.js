@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import { Card, Image } from 'semantic-ui-react'
-import airImg from '../static/service_air.jpg';
-import carImg from '../static/service_car.jpg';
-import forexImg from '../static/service_forex.jpg';
-import hotelImg from '../static/service_hotel.jpg';
-import tempoImg from '../static/force-traveller.jpg';
-import visaImg from '../static/Visa_processing.jpg';
-import './../css/services.css';
+import airImg from '../static/service_air.jpg'
+import carImg from '../static/service_car.jpg'
+import forexImg from '../static/service_forex.jpg'
+import hotelImg from '../static/service_hotel.jpg'
+import tempoImg from '../static/force-traveller.jpg'
+import visaImg from '../static/Visa_processing.jpg'
+import './../css/services.css'
+import { setBackground } from '../utils'
 
 class Services extends Component {
   render() {
+    setBackground()
     return (
       <div className='services'>
         <h1>Services</h1>

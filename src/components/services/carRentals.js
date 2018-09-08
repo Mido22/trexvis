@@ -12,6 +12,7 @@ import imageSlide2 from '../../static/serivces/carRentals/opening-door-to-car.jp
 import hour24 from '../../static/serivces/carRentals/24x7-Technical-Support.jpg'
 import cars from '../../data/cars'
 import chennaiLocalAreas from '../../data/chennaiLocalAreas'
+import { setBackground } from '../../utils'
 
 const toOptions = value => ({ text: value, value })
 const carOptions = cars.map(toOptions)
@@ -31,6 +32,7 @@ const packageList = [
 
 class CarRentals extends SubmitForm {
   render() {
+    setBackground()
     const {
       car_type, city, name, email, mobile_number, transport_type = 'Airport Transfer',
       to_from_airport = 'to_airport', airport_type = airportTypes[0].value, pickup_time,

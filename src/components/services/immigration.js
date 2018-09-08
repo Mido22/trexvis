@@ -4,13 +4,14 @@ import {
 } from 'semantic-ui-react'
 
 import './../../css/services/immigration.css'
+import { setBackground } from '../../utils'
 
 const immigDescriptions = [
   'Expert Immigration consultants address the challenges of relocating employees while they move through complex immigration laws of the respective place of relocation within India or abroad.',
   'Our experts provide complete documentation services and entire process guidance with 100% Quality and 24/7 Services (Round the clock)',
   'Single point of contact through our Management and to deliver consistent services across the network.',
   'We will keep up your Records with a data storage security and will secure up the storage services',
-].map(desc => <div>{desc}</div>)
+].map((desc, i) => <div key={i}>{desc}</div>)
 
 const visaOptions = [
   {
@@ -41,8 +42,8 @@ const visaOptions = [
     header: 'DE Registration',
     description: 'Expats Should De-register with FRRO as they depart from India for official immigration record purposes'
   },
-].map(card =>
-  <Card raised link='#' className='immigration-card' centered>
+].map((card, i) =>
+  <Card raised link className='immigration-card' centered key={i}>
     <Card.Content>
       <Card.Header className='immigration-card-header'> {card.header} </Card.Header>
       <Card.Description text-align='center'> {card.description} </Card.Description>
@@ -52,11 +53,12 @@ const visaOptions = [
 
 export default class Immigration extends Component {
   render() {
+    setBackground()
     return (
       <Segment raised className='immigration-container'>
       <Container>
           <div className='immigration-description-container'>{immigDescriptions}</div>
-          <Card.Group className='immigration-cards' text-align='center' doubling itemsPerRow='3' centered>
+          <Card.Group className='immigration-cards' text-align='center' doubling itemsPerRow='3'>
             {visaOptions}
           </Card.Group>
       </Container>

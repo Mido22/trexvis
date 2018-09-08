@@ -3,11 +3,12 @@ import {
   Card, Segment, Container, List
 } from 'semantic-ui-react'
 import './../../css/services/relocation.css'
+import { setBackground } from '../../utils'
 
 const relocationDescription = [
   'Trexvis India provides you with the full gamut of Domestic relocation and the destination services to the corporates, individuals. Small Scale, large Scale industry & Manufacturing Companies for your relocation.',
   <div>For professional assistance and for the guidance for your employee relocation needs, Reach us @ 9600013001 / <a href='mailto:info@trexvisindia.com'>info@trexvisindia.com</a></div>,
-].map(desc => <div>{desc}</div>)
+].map((desc, i) => <div key={i}>{desc}</div>)
 
 const relocationOptions = [
   {
@@ -65,15 +66,15 @@ const relocationOptions = [
       'We will make arrangement of your temporary housing viewings for Individual, group or family, students or for employees on your budget estimate with our experienced team',
     ] 
   },
-].map(card =>
-  <Card raised link='#' >
+].map((card, j) =>
+  <Card raised link key={j}>
     <Card.Content>
       <Card.Header className='relocation-card-header'> {card.header} </Card.Header>
       <Card.Description text-align='center'>
         <List>
           {
-            card.description.map(desc =>
-              <List.Item>
+            card.description.map((desc, i) =>
+              <List.Item key={i}>
                 <List.Icon name='check' color='green' />
                 <List.Content>{desc}</List.Content>
               </List.Item>
@@ -86,11 +87,12 @@ const relocationOptions = [
 
 export default class Relocation extends Component {
   render() {
+    setBackground()
     return (
       <Segment raised className='relocation-container'>
         <Container>
           <div className='relocation-description-container'>{relocationDescription}</div>
-          <Card.Group centered className='relocation-cards' text-align='center' doubling itemsPerRow='2'>{relocationOptions}</Card.Group>
+          <Card.Group className='relocation-cards' text-align='center' doubling itemsPerRow='2'>{relocationOptions}</Card.Group>
         </Container>
       </Segment>
     );

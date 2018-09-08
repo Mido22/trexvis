@@ -11,10 +11,12 @@ import {
   religiousDestionations,
 } from './../../data/tourPackages.js'
 import './../../css/services/tourPackages.css'
+import { setBackground } from '../../utils'
 
 
 export default class TourPackages extends SubmitForm {
   render() {
+    setBackground()
     const {
       theme, name, email, mobile_number, country = 'India', passenger, domestic, international, religious, tourType = tourTypes[0].value,
     } = this.state

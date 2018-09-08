@@ -3,9 +3,11 @@ import { Divider, List, Card, Form, Input, Checkbox, Button, Select, Container, 
 import SubmitForm from '../submitForm'
 import countryList from '../../data/countries'
 import './../../css/services/visa.css';
+import { setBackground } from '../../utils'
 
 class VisaService extends Component {
   render() {
+    setBackground()
     return (
       <Container className='visa-container' fluid>
         <Card.Group>

@@ -14,9 +14,11 @@ import CarRentals from './components/services/carRentals'
 import Immigration from './components/services/immigration'
 import Relocation from './components/services/relocation'
 import TourPackages from './components/services/tourPackages'
+import { setBackground } from './utils'
 
 class App extends Component {
   render() {
+    setBackground()
     return (
       <Router>
         <div className='App'>

@@ -10,7 +10,7 @@
 .App {
   display: flex;
   justify-content: center;
-  background: #ffffff;
+  /* background: #ffffff; */
 }
 
 .body {
@@ -20,7 +20,7 @@
 .body-container {
   margin: 0.1em 0;
   padding: 10px;
-  background: #ffffff;
+  /* background: #ffffff; */
   border-radius: 10px;
 }
 

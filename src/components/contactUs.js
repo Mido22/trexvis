@@ -4,11 +4,13 @@ import {
 } from 'semantic-ui-react'
 import './../css/contactUs.css'
 import SubmitForm from './submitForm'
+import { setBackground } from '../utils'
 
 const gMapLink ='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.32809610234!2d80.22650991469895!3d13.078380816065028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526707e358a5d3%3A0xd199f3493f613c9b!2sTREXVIS+INDIA!5e0!3m2!1sen!2sse!4v1534695897577'
 
 class ContactUs extends SubmitForm {
   render() {
+    setBackground()
     const {
       name, email, mobile_number, contact_message
     } = this.state
