@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Grid, Image } from 'semantic-ui-react'
+import { Grid, Image, Segment } from 'semantic-ui-react'
 import './../css/about.css'
 import aboutUsImg from '../static/aboutUs.jpg'
 import { setBackground } from '../utils'
@@ -9,7 +9,7 @@ class About extends Component {
   render() {
     setBackground()
     return (
-      <div className='body-container'>
+      <Segment className='body-container'>
         <Grid verticalAlign='middle' columns={1} centered >
           <Grid.Row>
             <Grid.Column>
@@ -33,7 +33,7 @@ class About extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      </div>
+      </Segment>
     );
   }
 }

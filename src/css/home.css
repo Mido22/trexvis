@@ -1,7 +1,23 @@
-.home-container  .client-header{
-  width: 100%;
-  text-align: center;
-  margin-bottom: 40px;
+.home-container .clients-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dark .ui.card {
+  background: none;
+  box-shadow: none;
+}
+
+.dark .ui.card > .card {
+  box-shadow: none;
+}
+
+.home-container .clients-container .ui.card:last-child{
+  margin-left: unset !important;
+  margin-right: unset !important;
 }
 
 @media (max-width: 760px) { 

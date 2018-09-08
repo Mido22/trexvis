@@ -27,6 +27,7 @@
   align-content: center;
   font: italic 1em "Fira Sans", serif;
   position: relative;
+  color: white;
 }
 
 .header-links {
@@ -49,6 +50,7 @@
 }
 
 .App-title {
+  mix-blend-mode: luminosity; 
   font-size: 4em;
   margin-bottom: 0;
   text-align: center;
