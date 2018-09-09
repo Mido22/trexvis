@@ -31,7 +31,7 @@ class ContactUs extends SubmitForm {
     )
     const contactDetails = (
       <Card.Group itemsPerRow={1} className='contact-details'>
-        <Card raised link='#'>
+        <Card raised link>
           <Card.Content>
             <Card.Header>Connect with us</Card.Header>
             <Card.Description>
@@ -40,7 +40,7 @@ class ContactUs extends SubmitForm {
             </Card.Description>
           </Card.Content>
         </Card>
-        <iframe title='Our Office Address' className='GIframe' src={gMapLink} frameborder='0' height='450' width='600' allowfullscreen></iframe>
+        <iframe title='Our Office Address' className='GIframe' src={gMapLink} frameBorder='0' height='450' width='600' allowFullScreen></iframe>
       </Card.Group>
     )
 
