@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { 
-  Container, Label, Card, Image, Header, Icon, List
+  Container, Image, Header, Icon, List
  } from 'semantic-ui-react'
 import wooriBank from '../static/home/Woori_Bank.jpg'
 import cxPresicion from '../static/home/CX.jpg'
@@ -13,16 +13,15 @@ class Home extends Component {
 
     setBackground()
 
-    const clientsPane = (
-      <Container className='clients-container dark'>
-        <Label size='huge' color='red'> Our Clients </Label>
-        <Card>
-          <Image src={wooriBank} />
-        </Card>
-        <Card>
-          <Image src={cxPresicion} />
-        </Card>
-      </Container>
+    const clientsPane2 = (
+      <div className='clients-trexvis greetings'>
+        <Header icon as='h1' textAlign='center'>
+          <Icon name='users' circular />
+          <Header.Content>Clients we are working with</Header.Content>
+        </Header>
+        <Image src={wooriBank} centered />
+        <Image src={cxPresicion} centered />
+      </div>
     )
 
     const greetingsDiv = (
@@ -84,7 +83,7 @@ class Home extends Component {
     return (
       <Container className='home-container'>
         {greetingsDiv}
-        {clientsPane}
+        {clientsPane2}
         {aboutTrexvis}
         {whyTrexvis}
         {support}

@@ -21,7 +21,7 @@
 }
 
 .home-container .welcome {
-  margin: 25vh auto 35vh;
+  margin: 25vh auto 39vh;
 }
 
 .home-container {
@@ -58,6 +58,11 @@
 
 .greetings .text {
   font-weight: bold;
+}
+
+.clients-trexvis img{
+  width: 295px;
+  margin: 15px;
 }
 
 @media (max-width: 760px) { 
