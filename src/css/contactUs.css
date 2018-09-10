@@ -1,0 +1,24 @@
+
+.contact-form-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.GIframe {
+  width: 600;
+  height: 450;
+  max-width: 90vw;
+}
+
+
+@media (min-width: 640px) { 
+  .contact-form {
+    max-width: 40vw;
+  }
+  .contact-details {
+    max-width: 30vw;
+  }
+}

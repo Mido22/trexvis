@@ -1,0 +1,68 @@
+.home-container .clients-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dark .ui.card {
+  background: none;
+  box-shadow: none;
+}
+
+.dark .ui.card > .card {
+  box-shadow: none;
+}
+
+.home-container .clients-container .ui.card:last-child{
+  margin-left: unset !important;
+  margin-right: unset !important;
+}
+
+.home-container .welcome {
+  margin: 25vh auto 35vh;
+}
+
+.home-container {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: white;
+}
+
+.home-container .icon {
+  color: white;
+}
+
+.home-container .greetings .greetings-header.content{
+  font-size: 3em;
+} 
+
+.home-container .greetings .content{
+  color: white;
+  font-size: 1.6em;
+  font-style: italic;
+  text-shadow: -1px -1px 1px rgb(112, 110, 110),
+               0px 2px 1px rgba(0,0,0,0.5),
+               2px 2px 2px rgba(0,0,0,0.7),
+               0px 0px 3px rgba(0,0,0,0.4);
+  text-align: center;
+} 
+
+.about-trexvis {
+  margin: 5vh 0;
+}
+
+.support-trexvis {
+  margin-top: 5vh;
+}
+
+.greetings .text {
+  font-weight: bold;
+}
+
+@media (max-width: 760px) { 
+.slide-container {
+  height: 60vw;
+  width: 60vw;
+}
+}

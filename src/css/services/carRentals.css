@@ -1,0 +1,62 @@
+
+.car-rentals-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  width: 100%;
+}
+
+.rentals-margin-up {
+  margin-top: 10px !important;
+}
+
+
+@media (max-width: 766px) { 
+  .car-rentals-container .image-slider {
+    max-width: 100vw;
+  }
+
+  .car-rentals-container .why-choose-texvis {
+    max-width: 100vw;
+  }
+}
+
+@media (min-width: 766px) { 
+  .car-rentals-container .image-slider {
+    max-width: 16vw;
+  }
+
+  .car-rentals-container .why-choose-texvis {
+    max-width: 31vw;
+  }
+
+  .car-rentals-container .quote-form {
+    max-width: 45vw;
+  }
+}
+
+.car-rentals-container .image-slide { 
+  margin-top: 30px;
+}
+
+.car-rentals-container > .segment {
+  padding: 10px;
+}
+
+.car-rentals-container .two-hour {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.car-rentals-container .why-choose-texvis .header{
+  text-align: center;
+}
+
+.car-rentals-container .why-choose-texvis .choose-list{
+  text-align: center;
+}
+
+.car-rentals-container .why-choose-texvis .enquiry{
+  float: right;
+}

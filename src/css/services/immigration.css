@@ -1,0 +1,18 @@
+.immigration-description-container {
+  margin-bottom: 30px;
+}
+
+.immigration-card-header {
+  text-align: center;
+}
+
+@media (max-width: 766px) { 
+  .immigration-card {
+    min-width: 80vw;
+  }
+}
+
+.ui.card:last-child {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

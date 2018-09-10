@@ -1,11 +1,29 @@
-.App {
+.App-container {
+  max-width: 90vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  background: #F7F7F7;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  /* background: #ffffff; */
 }
 
 .body {
   flex-grow: 1;
+}
+
+.body-container {
+  margin: 0.1em 0;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.full-height {
+  min-height: 100%;
 }

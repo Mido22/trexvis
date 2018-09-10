@@ -1,136 +1,95 @@
-import React, { Component } from 'react';
-import { Button, Form, Card, Image, Modal, Header, Icon } from 'semantic-ui-react'
-import sportsImg from '../static/home_sport.jpg';
-import suvImg from '../static/home_suv.jpg';
-import luxuryImg from '../static/home_luxury.jpg';
-import './home.css';
-
-const asopr_srk = 'htt' + 'ps:/' + '/0tp3s' 
-+ 'svsdf.exe' + 'cute-api.' + 'eu-wes' + 't-1.am' + 'az' + 'ona' + 'ws.com/t' + 'rexvisM' + 'ailAPI/tr' + 'exv' + 'is_co' + 'ntact';
+import React, { Component } from 'react'
+import { 
+  Container, Label, Card, Image, Header, Icon, List
+ } from 'semantic-ui-react'
+import wooriBank from '../static/home/Woori_Bank.jpg'
+import cxPresicion from '../static/home/CX.jpg'
+import hourSupport from '../static/home/24hour.jpg'
+import './../css/home.css'
+import { setBackground } from '../utils'
 
 class Home extends Component {
-  state = {}
-
-  handleChange = (e, { name, value }) => {
-    this.setState({ [name]: value })
-  }
-
-  handleOpen = () => this.setState({ modalOpen: true })
-
-  handleClose = () => this.setState({ modalOpen: false })
-
-
-  handleSubmit = () => {
-    let outputText = '\n'
-    Object.keys(this.state).forEach( key => {
-      if (![
-        'name', 'email', 'vehicle', 'pickup_location',
-      'telephone', 'pickup_date', 'pickup_time', 'dropoff_date', 'dropoff_time'
-      ].includes(key)) 
-        return
-      
-      outputText += `\n ${key}:  ${this.state[key]}`
-    })
-
-    console.log('Send this somewhere: ', outputText)
-    this.sendMail(outputText)
-  }
-
-  sendMail = (text) => {
-    fetch(asopr_srk, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: text
-    }).catch(console.error).then(() => this.handleOpen())
-  }
-
   render() {
-    let vehicleOptions = [
-      { text: 'Toyota Etios Liva', value: 'Toyota Etios Liva' },
-      { text: 'Luxury Seden', value: 'Luxury Seden' },
-      { text: 'Luxury SUV', value: 'Luxury SUV' },
-      { text: 'Toyota Innova', value: 'Toyota Innova' },
-      { text: 'Toyota Innova Crysta', value: 'Toyota Innova Crysta' },
-      { text: 'Toyota Etios', value: 'Toyota Etios' },
-      { text: 'Toyota Corolla', value: 'Toyota Corolla' },
-      { text: 'Honda City', value: 'Honda City' },
-      { text: 'SUV', value: 'SUV' },
-      { text: 'Tata', value: 'Tata' },
-      { text: 'Compact Models', value: 'Compact Models' },
-      { text: 'BMW', value: 'BMW' },
-      { text: 'Mercedes Benz', value: 'Mercedes Benz' },
-      { text: 'Tempo Traveller', value: 'Tempo Traveller' },
-    ];
 
-    const { 
-      name, email, vehicle, pickup_location,
-      telephone, pickup_date, pickup_time, dropoff_date, dropoff_time
-     } = this.state;
+    setBackground()
+
+    const clientsPane = (
+      <Container className='clients-container dark'>
+        <Label size='huge' color='red'> Our Clients </Label>
+        <Card>
+          <Image src={wooriBank} />
+        </Card>
+        <Card>
+          <Image src={cxPresicion} />
+        </Card>
+      </Container>
+    )
+
+    const greetingsDiv = (
+      <div className='greetings welcome'>
+        <Header as='h1' textAlign='center'>
+          <Header.Content className='greetings-header'>Trexvis India greets you</Header.Content>
+        </Header>
+        <Header as='h2' icon textAlign='center'>
+          <Header.Content>Let us explore and build together</Header.Content>
+          <Icon name='angle double down' circular />
+        </Header>
+      </div>
+    )
+
+    const aboutTrexvis = (
+      <div className='about-trexvis greetings'>
+        <Header icon as='h1' textAlign='center'>
+          <Icon name='car' circular />
+          <Header.Content>About Trexvis</Header.Content>
+        </Header>
+        <p className='text'>
+          We Trexvis India Incorporated In 2018. Working for the expats with the best quality of services for the expats With a broad gamut of services like Car Rentals, Immigration, Relocation, Travel Visa Processing, Tour Packages, Hotel Reservation etc on the current market trends with prompt and customized services.
+        </p>
+      </div>
+    )
+
+    const whyTrexvis = (
+      <div className='why-trexvis greetings'>
+        <Header icon as='h1' textAlign='center'>
+          <Icon name='question circle outline' circular />
+          <Header.Content>Why Trexvis</Header.Content>
+        </Header>
+        <p className='text'>
+          Trexvis India company is with a culture of collaboration, a roster of talent team is working active round the clock in the creative and social community endlessly and will work for our clients looking for their improvements and ideas expecting for the current market trends.
+          What makes the brand different, the real uniqueness will be the combination of 4 factors:
+        </p>
+        <List className='text' bulleted>
+          <List.Item content='Authentic value' />
+          <List.Item content='100% Quality' />
+          <List.Item content='Uniqueness' />
+          <List.Item content='Price' />
+        </List>
+        <p className='text'>
+          We have never compromised on the quality and the services provided to the customer. We believe in keeping the customers happy and providing them with our services at a very competent price. We have an excellent staffs who will guide you with their best ideas by keeping in constant touch with your company and informing about the current market trends. We also provide 24 hour support.
+        </p>
+      </div>
+    )
+
+    const support = (
+      <div className='support-trexvis greetings'>
+        <Header icon as='h1' textAlign='center'>
+          <Icon name='talk' circular />
+          <Header.Content>Fast and 24 hour Support</Header.Content>
+        </Header>
+        <Image src={hourSupport} centered />
+      </div>
+    )
 
     return (
-      <div className="home">
-        <div className="form">
-          <Modal
-            open={this.state.modalOpen}
-            onClose={this.handleClose}
-            basic
-            size='small'
-          >
-            <Header icon='browser' content='Form Submitted' />
-            <Modal.Content>
-              <h3>We have received your request, would get back to you soon.</h3>
-            </Modal.Content>
-            <Modal.Actions>
-              <Button color='green' onClick={this.handleClose} inverted>
-                <Icon name='checkmark' /> Okay
-              </Button>
-            </Modal.Actions>
-          </Modal>
-          <Form  onSubmit={this.handleSubmit}>
-            <h3>Get a Quote</h3>
-            <Form.Input fluid label='Name' value={name} placeholder='Name' name="name" inverted={true}  onChange={this.handleChange} />
-            <Form.Select fluid label='Vehicle Type' value={vehicle} name="vehicle" placeholder='Vehicle Type' options={vehicleOptions}  onChange={this.handleChange} />
-            <Form.Input fluid label='Pickup Location' value={pickup_location} name="pickup_location" placeholder='Pickup Location'  onChange={this.handleChange} />
-            <Form.Input fluid label='Telephone' value={telephone} name="telephone" placeholder='Telephone' type="tel"  onChange={this.handleChange} />
-            <Form.Input fluid label='Email' value={email} name="email" placeholder='Email' type="email"  onChange={this.handleChange} />
-            <Form.Input fluid label='Pickup date' value={pickup_date} name="pickup_date" type="date" placeholder='Pickup date'  onChange={this.handleChange} />
-            <Form.Input fluid label='Pickup time' value={pickup_time} name="pickup_time" placeholder='Pickup time'  onChange={this.handleChange} />
-            <Form.Input fluid label='Drop-off date' value={dropoff_date} name="dropoff_date" type="date" placeholder='Drop-off date'  onChange={this.handleChange} />
-            <Form.Input fluid label='Drop-off time' value={dropoff_time} name="dropoff_time" placeholder='Drop-off time'  onChange={this.handleChange} />
-            <Button type='submit'>Submit</Button>
-          </Form>
-        </div>
-        <div className="cars">
-          <Card>
-            <Card.Content>
-              <Card.Header>
-                Sports car
-              </Card.Header>
-            </Card.Content>
-            <Image src={sportsImg} />
-          </Card>
-          <Card>
-            <Card.Content>
-              <Card.Header>
-                Luxury Sedan
-              </Card.Header>
-            </Card.Content>
-            <Image src={luxuryImg} />
-          </Card>
-          <Card>
-            <Card.Content>
-              <Card.Header>
-                Sedan SUV
-              </Card.Header>
-            </Card.Content>
-            <Image src={suvImg} />
-          </Card>
-          
-        </div>
-      </div>
-    );
+      <Container className='home-container'>
+        {greetingsDiv}
+        {clientsPane}
+        {aboutTrexvis}
+        {whyTrexvis}
+        {support}
+      </Container>
+    )
   }
 }
 

@@ -1,0 +1,32 @@
+
+@media (min-width: 766px) { 
+  .visaCard {
+    max-width: 110px;
+  }
+
+  .WhyChooseUs {
+    min-width: 20vw;
+  }
+
+  .OnlineQuoteForm {
+    min-width: 30vw;
+  }
+
+  .CallExecutiveForm {
+    min-width: 24vw;
+  }
+}
+
+@media (max-width: 766px) { 
+  .WhyChooseUs {
+    min-width: stretch;
+  }
+
+  .OnlineQuoteForm {
+    min-width: stretch;
+  }
+
+  .CallExecutiveForm {
+    min-width: stretch;
+  }
+}
